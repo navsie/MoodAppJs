@@ -1,14 +1,27 @@
 <!doctype html>
 <html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    </head>
+
+
+
     <script>
     window.onload = function() {
-        window.location = "http://128.199.132.0:3000";
-      /* navigator.getUserMedia = navigator.getUserMedia ||
+       /* var video = document.querySelector('audio');
+        audio.src = "file:///E:/Music/ZNMD-Senorita.mp3";*/
+         var u = new SpeechSynthesisUtterance('You have reached your destination');
+    speechSynthesis.speak(u);
+
+
+
+       /* window.location = "http://128.199.132.0:3000";
+       navigator.getUserMedia = navigator.getUserMedia ||
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia;
 
 if (navigator.getUserMedia) {
-   navigator.getUserMedia({ video: true, audio: { width: 1280, height: 720 } },
+   navigator.getUserMedia({ video: true },
       function(stream) {
          var video = document.querySelector('video');
          video.src = window.URL.createObjectURL(stream);
@@ -23,6 +36,7 @@ if (navigator.getUserMedia) {
 } else {
    console.log("getUserMedia not supported");
 }*/
+
 
     };
     </script>
