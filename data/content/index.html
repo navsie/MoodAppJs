@@ -10,7 +10,11 @@
     window.onload = function() {
        /* var video = document.querySelector('audio');
         audio.src = "file:///E:/Music/ZNMD-Senorita.mp3";*/
-         var u = new SpeechSynthesisUtterance('You have reached your destination');
+         var u = new SpeechSynthesisUtterance('Blues are going down Pep up yourself!');
+        u.lang = 'en-EN';
+        u.rate = 0.75;
+          u.pitch = 1.0;
+        u.volume = 1.5;
     speechSynthesis.speak(u);
 
 
